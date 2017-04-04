@@ -1,11 +1,11 @@
 /*Used tutorial at https://www.w3schools.com/css/default.asp to get started with CSS formatting*/
 
-/*Scratch space on colors: dark gray #2C4251, light teal #aaefdf, teal #4bc6b9, light maroon #d16666, light gray blue #96c3ce*/
+/*Scratch space on colors: dark gray #2C4251, light teal #aaefdf, teal #4bc6b9, light maroon #d16666, light gray blue #96c3ce, off white faebd7*/
 /*My fonts: font-family: 'Slabo 27px', serif;
 font-family: 'Open Sans', sans-serif;*/
 
 body {
-  background-color: #4bc6b9;
+  background-color: #faebd7;
   margin: 0;
   padding: 0;
 }
@@ -16,6 +16,7 @@ div.cover {
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: auto;
 }
 
 h1 {
@@ -48,13 +49,13 @@ ul {
 }
 
 nav {
-  background-color: #2C4251;
+  background-color: #faebd7;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-content: flex-end;
 }
 
 nav.title {
   display: flex;
-  align-self: flex-start;
+  justify-content: flex-start;
 }
