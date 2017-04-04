@@ -5,15 +5,17 @@
 font-family: 'Open Sans', sans-serif;*/
 
 body {
-  background-color: #AAEFDF;
+  background-color: #4bc6b9;
   margin: 0;
   padding: 0;
 }
 
+/* Trying to scale the cover right using concepts from https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#Values */
 div.cover {
-  background-image: url("http://marc.merlins.org/blogimg/thumb1024_109_20160714_Narisawa_Tokyo.jpg");
+  background-image: url("https://www.feedmefancy.com/wp-content/uploads/2015/06/Weekly-Specials-_-Salads-_-Beverages-_-Utensils-2.jpg");
   background-size: cover;
-  padding-bottom: 768px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 h1 {
@@ -39,4 +41,20 @@ a:link, a:visited {
 a:hover {
   color: #4BC6B9;
   text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #2C4251;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav.title {
+  display: flex;
+  align-self: flex-start;
 }
