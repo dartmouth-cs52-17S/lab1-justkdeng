@@ -11,7 +11,7 @@ body {
 }
 
 div.cover {
-  background-image: http://marc.merlins.org/blogimg/thumb1024_109_20160714_Narisawa_Tokyo.jpg;
+  background-image: url("http://marc.merlins.org/blogimg/thumb1024_109_20160714_Narisawa_Tokyo.jpg");
   background-size: cover;
 }
 
