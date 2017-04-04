@@ -1,0 +1,13 @@
+/*Used tutorial at https://www.w3schools.com/css/default.asp to get started with CSS formatting*/
+
+body {
+    background-color: powderblue;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: gray;
+}
