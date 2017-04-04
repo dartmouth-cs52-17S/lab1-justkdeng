@@ -1,13 +1,41 @@
 /*Used tutorial at https://www.w3schools.com/css/default.asp to get started with CSS formatting*/
 
+/*Scratch space on colors: dark gray #2C4251, light teal #aaefdf, teal #4bc6b9, light maroon #d16666, light gray blue #96c3ce*/
+/*My fonts: font-family: 'Slabo 27px', serif;
+font-family: 'Open Sans', sans-serif;*/
+
 body {
-    background-color: powderblue;
+  background-color: #AAEFDF;
+  margin: 0;
+  padding: 0;
+}
+
+.cover {
+  background-image: http://marc.merlins.org/blogimg/thumb1024_109_20160714_Narisawa_Tokyo.jpg;
+  background-size: cover;
 }
 
 h1 {
-    color: blue;
+  color: #D16666;
+  font-family: 'Slabo 30px';
+}
+
+h2 {
+  color: #;
+  font-family: 'Open Sans 24px';
 }
 
 p {
-    color: gray;
+  color: #2C4251;
+  font-family: 'Open Sans 16px';
+}
+
+a:link, a:visited {
+  color: #96C3CE;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4BC6B9;
+  text-decoration: underline;
 }
