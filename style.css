@@ -1,7 +1,7 @@
 /*Used tutorial at https://www.w3schools.com/css/default.asp to get started with CSS formatting*/
-
-/*Scratch space on colors: dark gray #2C4251, light teal #aaefdf, teal #4bc6b9, light maroon #d16666, light gray blue #96c3ce, off white faebd7*/
-/*My fonts: font-family: 'Slabo 27px', serif;
+3
+/*Scratch space on colors: dark gray #333745, light green #BBD8B3, maroon #510D0A, pink #F03A47, weird yellow #F3B61F*/
+/*My fonts: font-family: 'Slabo', serif;
 font-family: 'Open Sans', sans-serif;*/
 
 body {
@@ -13,23 +13,25 @@ body {
 /* Trying to scale the cover right using concepts from https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#Values */
 .cover {
   display: flex;
-  background-image: url("https://www.feedmefancy.com/wp-content/uploads/2015/06/Weekly-Specials-_-Salads-_-Beverages-_-Utensils-2.jpg");
-  background-size: cover;
+  background: url(cover1.png);
+  /* Used import css from Figma after I made my mockup */
+  transform: matrix(0.8, 0.6, -0.6, 0.8, 0, 0);
+  /*background-size: cover;*/
   height: 500;
-  justify-content: center;
-  align-content: center;
+  /*justify-content: center;
+  align-content: center;*/
 }
 
 h1 {
-  color: #D16666;
-  font-family: 'Slabo';
-  font-size: 80px;
+  font-size: 88px;
+  color: #F3B61F;
+  font-family: 'Slabo 27px';
 }
 
 h2 {
-  color: #;
+  color: #333745;
   font-family: 'Open Sans';
-  font-size: 50px;
+  font-size: 30px;
 }
 
 p {
@@ -38,27 +40,30 @@ p {
   font-size: 20px;
 }
 
-a:link, a:visited {
-  color: #96C3CE;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #4BC6B9;
-  text-decoration: underline;
-}
-
 ul {
   list-style-type: none;
 }
 
 nav {
-  background-color: #faebd7;
+  background: #FFFFFF;
   display: flex;
-  flex-direction: column;
-  align-content: flex-end;
+  flex-direction: row;
+  align-content: flex-start;
+  font-family: 'Slabo 27px';
+  font-size: 30px;
+}
+
+#nav a:link, a:visited {
+  color: #333745;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  color: #F03A47;
+  text-decoration: underline;
 }
 
 nav.title {
-  align-self: flex-start;
+  color: #510D0A;
+  font-size: 50px;
 }
