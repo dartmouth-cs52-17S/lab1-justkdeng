@@ -34,7 +34,7 @@ nav a:hover {
   color: #F03A47;
 }
 
-#title {
+#title a:link, a:visited {
   color: #510D0A;
   font-size: 40px;
   padding-left: 20px;
