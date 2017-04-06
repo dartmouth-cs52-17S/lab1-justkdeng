@@ -1,8 +1,5 @@
-/*Used tutorial at https://www.w3schools.com/css/default.asp to get started with CSS formatting*/
-3
-/*Scratch space on colors: dark gray #333745, light green #BBD8B3, maroon #510D0A, pink #F03A47, weird yellow #F3B61F*/
-/*My fonts: font-family: 'Slabo', serif;
-font-family: 'Open Sans', sans-serif;*/
+/* Used tutorial at https://www.w3schools.com/css/default.asp to get started with CSS formatting.
+   Used https://css-tricks.com/snippets/css/a-guide-to-flexbox/ for flexbox ideas. */
 
 body {
   margin: 0 !important;
@@ -43,10 +40,8 @@ nav a:hover {
 
 span {
   display: inline-flex;
-}
-
-#signin {
-  /*justify-content: flex-end;*/
+  justify-content: flex-end;
+  flex-grow: 1;
   color: #F03A47;
 }
 
@@ -68,6 +63,12 @@ span {
   padding-left: 30px;
 }
 
+.email {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+
 /* Styling my input box with tricks from https://www.w3schools.com/css/css_form.asp, http://stackoverflow.com/questions/6669846/css-input-field-text-color-of-inputted-text, and http://stackoverflow.com/questions/5617703/background-color-in-input-and-text-fields */
 input {
   border: 1px solid #510D0A;
@@ -85,8 +86,8 @@ button {
   background-color: #F03A47;
   border: none;
   border-radius: 10px;
-  width: 80px;
-  height: 50px;
+  width: 60px;
+  height: 30px;
   color: #ffffff;
   font-family: "Slabo 27px";
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
