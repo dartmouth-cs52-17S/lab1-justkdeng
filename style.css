@@ -20,13 +20,13 @@ body {
   align-content: center;
 }
 
-h1 {
-  font-size: 60px;
+.cover h1 {
+  font-size: 40px;
   color: #F3B61F;
   font-family: 'Slabo 27px';
 }
 
-h2 {
+.cover h2 {
   color: #333745;
   font-family: 'Open Sans';
   font-size: 24px;
