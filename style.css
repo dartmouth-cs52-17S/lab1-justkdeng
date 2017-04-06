@@ -13,13 +13,11 @@ body {
 /* Trying to scale the cover right using concepts from https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#Values */
 .cover {
   display: flex;
-  background: url(cover1.png);
-  /* Used import css from Figma after I made my mockup */
-  transform: matrix(0.8, 0.6, -0.6, 0.8, 0, 0);
-  /*background-size: cover;*/
-  height: 500;
-  /*justify-content: center;
-  align-content: center;*/
+  background: url(cover2.jpg);
+  background-size: cover;
+  /*height: 500;*/
+  justify-content: flex-start;
+  align-content: center;
 }
 
 h1 {
@@ -48,8 +46,7 @@ nav {
   background: #FFFFFF;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
+  justify-content: space-between;
   font-family: 'Slabo 27px';
   font-size: 30px;
 }
