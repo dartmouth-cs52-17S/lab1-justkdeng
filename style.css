@@ -12,7 +12,7 @@ body {
 nav {
   /*background: #FFFFFF;*/
   display: flex;
-  align-items: flex-end;
+  align-content: flex-start;
   justify-content: flex-start;
   font-family: 'Slabo 27px';
   font-size: 20px;
@@ -40,9 +40,9 @@ nav a:hover {
   padding-left: 15px;
 }
 
-/* Trying to scale the cover right using concepts from https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#Values */
 .cover {
   display: flex;
+  /* Image taken from https://www.pinterest.com/alikat89/fancy-food/ with actual link https://s-media-cache-ak0.pinimg.com/736x/36/e4/78/36e478cb8cea6dae3ffcc2cc9a3b5c5d.jpg*/
   background: url(cover2.jpg);
   background-size: cover;
   height: 800px;
