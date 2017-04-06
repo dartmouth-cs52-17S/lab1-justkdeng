@@ -36,7 +36,7 @@ nav a:hover {
 #title {
   color: #510D0A;
   font-size: 40px;
-  padding-left: 50px;
+  /*padding-left: 50px;*/
   text-decoration: underline;
 }
 
@@ -52,21 +52,21 @@ nav a:hover {
 }
 
 .cover h1 {
-  font-size: 70px;
+  font-size: 90px;
   color: #F3B61F;
   font-family: 'Slabo 27px';
-  padding-left: 30px;
+  /*padding-left: 30px;*/
 }
 
 /* Styling my input box with tricks from https://www.w3schools.com/css/css_form.asp, http://stackoverflow.com/questions/6669846/css-input-field-text-color-of-inputted-text, and http://stackoverflow.com/questions/5617703/background-color-in-input-and-text-fields */
 input {
   border: 1px solid #510D0A;
   box-sizing: border-box;
-  padding: 8px 8px;
-  padding-left: 60px;
+  padding: 7px 7px;
+  /*padding-left: 60px;*/
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 220px;
-  font-family: 'Slabo 27px';
+  font-family: 'Open Sans';
   font-style: italic;
   background-color: #F2F2F2;
   color: #828282;
@@ -78,9 +78,9 @@ button {
   border-radius: 4px;
   width: 60px;
   color: #ffffff;
-  padding: 2px 2px;
+  padding: 2px 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding-left: 70px;
+  /*padding-left: 70px;*/
 }
 
 .cover h2 {
