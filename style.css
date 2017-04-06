@@ -52,7 +52,7 @@ nav a:hover {
 }
 
 .cover h1 {
-  font-size: 90px;
+  font-size: 110px;
   color: #F3B61F;
   font-family: 'Slabo 27px';
   /*padding-left: 30px;*/
@@ -109,7 +109,7 @@ footer {
 }
 
 footer ul {
-  padding-left: 80px;
+  padding-left: 120px;
 }
 
 footer a:link, a:visited {
