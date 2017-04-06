@@ -9,6 +9,7 @@ body {
   padding: 0;
 }
 
+/* To fix any padding issues I also used code to edit html section padding, from http://stackoverflow.com/questions/5387576/css-margin-0-is-not-setting-to-0*/
 html {
   margin: 0 !important;
   padding: 0;
@@ -20,6 +21,7 @@ nav {
   justify-content: flex-start;
   font-family: 'Slabo 27px';
   font-size: 20px;
+  padding-top: 15px;
 }
 
 nav a:link, a:visited {
@@ -41,10 +43,11 @@ nav a:hover {
 
 span {
   nav;
+  display: inline-flex;
 }
 
 #signin {
-  justify-content: flex-end;
+  /*justify-content: flex-end;*/
   color: #F03A47;
 }
 
