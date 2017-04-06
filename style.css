@@ -9,76 +9,6 @@ body {
   padding: 0;
 }
 
-/* Trying to scale the cover right using concepts from https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#Values */
-.cover {
-  display: flex;
-  background: url(cover2.jpg);
-  background-size: cover;
-  height: 900;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: center;
-}
-
-.cover h1 {
-  font-size: 35px;
-  color: #F3B61F;
-  font-family: 'Slabo 27px';
-}
-
-
-
-/* Styling my input box with tricks from https://www.w3schools.com/css/css_form.asp */
-input {
-  border: 1px solid #510D0A;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 5px 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 50px;
-  font-family: 'Slabo 27px';
-}
-
-button {
-  background-color: #F03A47;
-  border: none;
-  color: #ffffff;
-  padding: 8px 8px;
-}
-
-.cover h2 {
-  color: #333745;
-  font-family: 'Open Sans';
-  font-size: 24px;
-}
-
-/*p {
-  color: #2C4251;
-  font-family: 'Open Sans';
-  font-size: 20px;
-}*/
-
-ul {
-  list-style-type: none;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-}
-
-footer a:link, a:visited {
-  color: ##F2F2F2;
-  font-family: 'Open Sans';
-  font-size: 20px;
-}
-
-footer a:hover {
-  color: #F3B61F;
-  font-family: 'Open Sans';
-  font-size: 20px;
-}
-
 nav {
   background: #FFFFFF;
   display: flex;
@@ -101,4 +31,83 @@ nav a:hover {
 #title {
   color: #510D0A;
   font-size: 50px;
+}
+
+/* Trying to scale the cover right using concepts from https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#Values */
+.cover {
+  display: flex;
+  background: url(cover2.jpg);
+  background-size: cover;
+  height: 900;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.cover h1 {
+  font-size: 35px;
+  color: #F3B61F;
+  font-family: 'Slabo 27px';
+}
+
+/* Styling my input box with tricks from https://www.w3schools.com/css/css_form.asp */
+input {
+  border: 1px solid #510D0A;
+  box-sizing: border-box;
+  padding: 5px 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /*width: 50px;*/
+  flex-basis: fit-content;
+  font-family: 'Slabo 27px';
+}
+
+button {
+  background-color: #F03A47;
+  flex-basis: fit-content;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 8px 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cover h2 {
+  color: #333745;
+  font-family: 'Open Sans';
+  font-size: 24px;
+}
+
+/*p {
+  color: #2C4251;
+  font-family: 'Open Sans';
+  font-size: 20px;
+}*/
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  color: #F2F2F2;
+  font-family: 'Open Sans';
+  font-size: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+}
+
+footer a:link, a:visited {
+  color: #F2F2F2;
+  /*font-family: 'Open Sans';*/
+  font-size: 16px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #F3B61F;
+  /*font-family: 'Open Sans';*/
+  /*font-size: 16px;*/
+  /*text-decoration: none;*/
 }
