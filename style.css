@@ -48,7 +48,8 @@ nav {
   background: #FFFFFF;
   display: flex;
   flex-direction: row;
-  align-content: flex-start;
+  justify-content: space-evenly;
+  align-content: center;
   font-family: 'Slabo 27px';
   font-size: 30px;
 }
