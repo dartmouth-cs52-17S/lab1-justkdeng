@@ -12,13 +12,17 @@ html {
   padding: 0;
 }
 
+a:hover {
+  color: #F3B61F;
+}
+
 nav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   font-family: 'Slabo 27px';
   font-size: 20px;
-  padding-top: 15px;
+  /*padding-top: 15px;*/
 }
 
 nav a:link, a:visited {
@@ -28,7 +32,6 @@ nav a:link, a:visited {
 }
 
 nav a:hover {
-  color: #F03A47;
   text-decoration: underline;
 }
 
@@ -38,11 +41,13 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Learned how to make things on the same line. Display: inline and used flex too. http://stackoverflow.com/questions/21939932/how-to-position-h1-element-on-the-same-line-as-navigation-links */
 span {
   display: inline-flex;
   justify-content: flex-end;
   flex-grow: 1;
   color: #F03A47;
+  padding-right: 40px;
 }
 
 .cover {
@@ -60,13 +65,14 @@ span {
   font-size: 75px;
   color: #F3B61F;
   font-family: 'Slabo 27px';
-  padding-left: 30px;
+  padding-left: 50px;
 }
 
 .email {
   display: flex;
-  justify-content: flex-start;
-  padding-left: 30px;
+  justify-content: space-around;
+  padding-left: 120px;
+  align-items: center;
 }
 
 /* Styling my input box with tricks from https://www.w3schools.com/css/css_form.asp, http://stackoverflow.com/questions/6669846/css-input-field-text-color-of-inputted-text, and http://stackoverflow.com/questions/5617703/background-color-in-input-and-text-fields */
@@ -86,17 +92,19 @@ button {
   background-color: #F03A47;
   border: none;
   border-radius: 10px;
-  width: 60px;
+  width: 75px;
   height: 30px;
   color: #ffffff;
   font-family: "Slabo 27px";
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .cover h2 {
   color: #333745;
   font-family: 'Open Sans';
   font-size: 27px;
+  padding-left: 50px;
 }
 
 ul li {
@@ -123,8 +131,4 @@ footer a:link, a:visited {
   color: #F2F2F2;
   font-size: 16px;
   text-decoration: none;
-}
-
-footer a:hover {
-  color: #F3B61F;
 }
