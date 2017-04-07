@@ -158,29 +158,30 @@ footer a:hover {
 
   cover {
     background-color: #ffffff;
+    height: auto;
   }
 
   footer {
     display: flex;
     background-color: #510D0A;
     flex-direction: column;
-    height: 20px;
+    /*height: 20px;*/
   }
 
   .email {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .cover h1 {
-    padding-left: 50px;
+    padding-left: 20px;
     font-size: 30px;
   }
 
   .cover h2 {
-    padding-left: 50px;
+    padding-left: 20px;
     font-size: 18px;
   }
 
