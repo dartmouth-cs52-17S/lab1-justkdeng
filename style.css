@@ -156,11 +156,15 @@ footer a:hover {
     align-items: flex-start;
   }
 
+  cover {
+    background-color: #ffffff;
+  }
+
   footer {
     display: flex;
     background-color: #510D0A;
     flex-direction: column;
-    height: auto;
+    height: 20px;
   }
 
   .email {
