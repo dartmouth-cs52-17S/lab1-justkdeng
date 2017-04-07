@@ -156,8 +156,14 @@ footer a:hover {
     align-items: flex-start;
   }
 
+  nav a:link, a:visited {
+    color: #333745;
+    padding-left: 40px;
+    text-decoration: none;
+  }
+
   cover {
-    background-color: #ffffff;
+    background: #ffffff;
     height: auto;
   }
 
@@ -172,11 +178,16 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-    align-items: flex-start;
+    align-items: center;
   }
 
   input {
     width: 200px;
+  }
+
+  button {
+    margin-left: 0px;
+    margin-top: 10px;
   }
 
   .cover h1 {
@@ -190,6 +201,6 @@ footer a:hover {
   }
 
   ul {
-    padding-left: 50px;
+    padding-left: 40px;
   }
 }
