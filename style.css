@@ -46,8 +46,15 @@ span {
   display: inline-flex;
   justify-content: flex-end;
   flex-grow: 1;
-  color: #F03A47;
   padding-right: 40px;
+}
+
+span a:link, a:visited {
+  color: #F03A47;
+}
+
+span a:hover {
+  color: #333745;
 }
 
 .cover {
@@ -98,20 +105,21 @@ button {
   font-family: "Slabo 27px";
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   float: right;
+  margin-left: 20px;
 }
 
 .cover h2 {
   color: #333745;
   font-family: 'Open Sans';
   font-size: 27px;
-  padding-left: 50px;
+  padding-left: 70px;
   padding-top: 20px;
 }
 
 ul li {
   color: #F2F2F2;
   font-family: 'Open Sans';
-  font-size: 20px;
+  font-size: 22px;
 }
 
 ul {
@@ -132,4 +140,8 @@ footer a:link, a:visited {
   color: #F2F2F2;
   font-size: 16px;
   text-decoration: none;
+}
+
+footer a:hover {
+  color: #F3B61F;
 }
