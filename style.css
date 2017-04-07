@@ -158,14 +158,13 @@ footer a:hover {
 
   cover {
     background-color: #ffffff;
-    height: auto;
+    height: 20px;
   }
 
   footer {
     display: flex;
     background-color: #510D0A;
     flex-direction: column;
-    /*height: 20px;*/
   }
 
   .email {
