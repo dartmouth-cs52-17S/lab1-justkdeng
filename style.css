@@ -153,36 +153,34 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
   }
 
   footer {
     display: flex;
     background-color: #510D0A;
     flex-direction: column;
+    height: auto;
   }
 
   .email {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 
-  input {
-    padding: 0px;
-  }
-
-  button {
-    padding: 0px;
-  }
-
   .cover h1 {
-    padding: 0px;
+    padding-left: 50px;
+    font-size: 30px;
   }
 
   .cover h2 {
-    padding 0px;
+    padding-left: 50px;
+    font-size: 18px;
   }
 
-
+  ul {
+    padding-left: 50px;
+  }
 }
