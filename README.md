@@ -25,6 +25,8 @@ I had from the regular site, just with a flex column instead of a row. I was als
 
 # What didn't work
 
+While I originally wanted a paragraph describing how Nom works, the mockup didn't look good with too much text. I decided to not include the text that I had drafted in HTML.
+
 I had a lot of trouble with flexbox at first because spacing wasn't as easy as expected. It was difficult to use flex to get space-between, while also centering the group. I ended up using padding for this. Also my mobile version wouldn't show up on my cell phone and instead went to my regular site, until I changed the HTML.
 
 
