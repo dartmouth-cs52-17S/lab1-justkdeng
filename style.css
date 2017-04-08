@@ -158,22 +158,22 @@ label {
 
 @media screen and (max-width: 500px) {
 
-/* Overlay css adapted from: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
   nav {
+    display: none;
+  }
+
+/* Overlay css adapted from: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+  input[type=checkbox]:checked ~ nav {
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 20px;
+    align-items: flex-start;
+    padding-top: 50px;
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: #ffffff;
-    overflow-x: hidden;
-    transition: 0.7s;
+    transition: 0.5s;
   }
-  /*input[type=checkbox]:checked ~ */
-  /*nav {
-    display: none;
-  }*/
 
 /* For placement in the corner: http://stackoverflow.com/questions/7282236/placing-an-image-to-the-top-right-corner-css */
   #mobilemenu {
@@ -182,7 +182,8 @@ label {
     top: 20px;
     left: 10px;
     width: 50px;
-    opacity: 0.7;
+    opacity: 0;
+    z-index: 1;
   }
 
   label {
@@ -191,9 +192,9 @@ label {
     font-family: 'Slabo 27px';
     padding-top: 20px;
     padding-left: 10px;
-    font-size: 25px;
+    font-size: 22px;
     color: #510D0A;
-    text-decoration: underline;
+    z-index: 1;
   }
 
   span {
@@ -203,18 +204,18 @@ label {
   .cover {
     background: #ffffff;
     height: auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 
   footer {
-    display: flex;
     background-color: #510D0A;
     flex-direction: column;
     height: auto;
   }
 
-  footer a:link, a:visited {
+  footer a:link, footer a:visited {
     font-size: 14px;
-    text-decoration: none;
   }
 
   ul li {
@@ -222,10 +223,9 @@ label {
   }
 
   .email {
-    display: flex;
     flex-direction: column;
+    padding-top: 10px;
     padding-left: 20px;
-    align-items: center;
   }
 
   input {
