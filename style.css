@@ -25,7 +25,7 @@ nav {
   padding-top: 15px;
 }
 
-nav a:link, a:visited {
+nav a:link, nav a:visited {
   color: #333745;
   padding-left: 50px;
   text-decoration: none;
@@ -49,7 +49,7 @@ span {
   padding-right: 40px;
 }
 
-span a:link, a:visited {
+span a:link, span a:visited {
   color: #F03A47;
 }
 
@@ -137,7 +137,7 @@ footer {
   height: 350px;
 }
 
-footer a:link, a:visited {
+footer a:link, footer a:visited {
   color: #F2F2F2;
   font-size: 16px;
   text-decoration: none;
@@ -148,78 +148,54 @@ footer a:hover {
 }
 
 /* For hiding mobile version. Found how to display: none here: http://stackoverflow.com/questions/17136513/make-a-fixed-nav-bar-disappear-when-the-user-scrolls-down-and-reappear-upon-scro  */
-/*#mobilemenu {
-  display: none;
-}
-
-#mobiletitle {
+#mobilemenu {
   display: none;
 }
 
 label {
   display: none;
-}*/
-
-.mobile {
-  display: none;
 }
 
 @media screen and (max-width: 500px) {
 
-  .mobile {
-    display: flex;
-    /*flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;*/
+/* Overlay css adapted from: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+  nav {
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.7s;
   }
+  /*input[type=checkbox]:checked ~ */
+  /*nav {
+    display: none;
+  }*/
 
 /* For placement in the corner: http://stackoverflow.com/questions/7282236/placing-an-image-to-the-top-right-corner-css */
   #mobilemenu {
+    display: block;
     position: absolute;
-    top: 25px;
-    right: 10px;
+    top: 20px;
+    left: 10px;
     width: 50px;
     opacity: 0.7;
   }
 
-  #mobiletitle {
-    display: flex;
-    color: #510D0A;
-    font-size: 40px;
-    text-decoration: underline;
-    padding-left: 20px;
-  }
-
-  nav {
-    display: none;
-  }
-
   label {
-    font-family: 'Slabo 27px';
-    color: #333745;
+    display: block;
     position: absolute;
-    top: 25px;
-    right: 10px;
-    text-decoration: none;
+    font-family: 'Slabo 27px';
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 25px;
+    color: #510D0A;
+    text-decoration: underline;
   }
 
-  /*input[type=checkbox]:checked ~ nav {*/
-    /*display: flex;*/
-    /*background-color: #510D0A;
-    flex-direction: column;*/
-    /*justify-content: flex-start;
-    align-items: flex-start;*/
-    /*min-height: 100%;*/
-  /*}*/
-
-  input[type=checkbox]:checked ~ label {
-    display: none;
-  }
-
-  nav a:link, a:visited {
-    color: #333745;
-    padding-left: 40px;
-    text-decoration: none;
+  span {
+    padding-right: 0px;
   }
 
   .cover {
