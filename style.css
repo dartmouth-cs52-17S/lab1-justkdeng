@@ -147,13 +147,73 @@ footer a:hover {
   color: #F3B61F;
 }
 
+/* For hiding mobile version. Found how to display: none here: http://stackoverflow.com/questions/17136513/make-a-fixed-nav-bar-disappear-when-the-user-scrolls-down-and-reappear-upon-scro  */
+/*#mobilemenu {
+  display: none;
+}
+
+#mobiletitle {
+  display: none;
+}
+
+label {
+  display: none;
+}*/
+
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 640px) {
 
-  nav {
+  .mobile {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-start;*/
+  }
+
+/* For placement in the corner: http://stackoverflow.com/questions/7282236/placing-an-image-to-the-top-right-corner-css */
+  #mobilemenu {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    width: 50px;
+    opacity: 0.7;
+  }
+
+  #mobiletitle {
+    display: flex;
+    color: #510D0A;
+    font-size: 40px;
+    text-decoration: underline;
+    padding-left: 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  label {
+    font-family: 'Slabo 27px';
+    color: #333745;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    text-decoration: none;
+  }
+
+  /*input[type=checkbox]:checked ~ nav {*/
+    /*display: flex;*/
+    /*background-color: #510D0A;
+    flex-direction: column;*/
+    /*justify-content: flex-start;
+    align-items: flex-start;*/
+    /*min-height: 100%;*/
+  /*}*/
+
+  input[type=checkbox]:checked ~ .cover h2 {
+    display: none;
   }
 
   nav a:link, a:visited {
@@ -172,6 +232,15 @@ footer a:hover {
     background-color: #510D0A;
     flex-direction: column;
     height: auto;
+  }
+
+  footer a:link, a:visited {
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  ul li {
+    font-size: 20px;
   }
 
   .email {
