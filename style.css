@@ -164,7 +164,7 @@ label {
   display: none;
 }
 
-@media only screen and (max-width: 640px) {
+@media screen and (max-width: 500px) {
 
   .mobile {
     display: flex;
@@ -212,7 +212,7 @@ label {
     /*min-height: 100%;*/
   /*}*/
 
-  input[type=checkbox]:checked ~ .cover h2 {
+  input[type=checkbox]:checked ~ label {
     display: none;
   }
 
