@@ -1,6 +1,6 @@
 # About 
 
-I worked on creating a static landing page using only HTML/CSS.
+I worked on creating a static landing page using only HTML/CSS. See the live site [here](https://dartmouth-cs52-17s.github.io/lab1-justkdeng/)
 
 ### Mockup:
 <img src="https://github.com/dartmouth-cs52-17S/lab1-justkdeng/blob/master/Landing%20page%20mockup.png?raw=true" width=700>
